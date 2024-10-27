@@ -1,0 +1,133 @@
+.navigation{
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    min-height: 100vh;
+    font-size: 15px;
+    color: white;
+    background:linear-gradient(10deg, #252663, #05454d);
+    padding: 10px 10px;
+    overflow: hidden;
+}
+.navigation .custom-link{
+    
+        color: #ffffff; /* Replace #ff0000 with your desired color code */
+        text-decoration: none;
+}
+
+.navigation.active{
+    width: max-content;
+}
+
+
+.navigation .menu{
+    position: absolute;
+    right: 10px;
+    top: 0;
+    margin-left: auto;
+    font-size: 18px;
+    height: 35px;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    cursor: pointer;
+
+}
+
+.navigation.active .menu{
+    position: relative;
+
+
+}
+
+.navigation .menu.active{
+    rotate: 180deg;
+}
+
+
+.navigation header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 25px 0 15px;
+    background-color: rgba(255, 255, 255, 0.377);
+    border-radius: 14px;
+    margin-bottom: 10px;
+}
+
+
+.navigation header::after{
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.377);
+    bottom: 0;
+}
+
+.navigation.dark header{
+    background-color: rgba(0, 0, 0, 0.438);
+}
+
+
+.navigation.active header{
+    padding: 0;
+    margin-top: 10px;
+    background-color: transparent;
+}
+
+.navigation.active header::after{
+    display: none;
+}
+
+.navigation.active header span{
+    display: none;
+}
+
+
+
+.navigation header .profile{
+    height: 50px;
+    aspect-ratio:1;
+    border-radius: 50%;
+    background-color: lightgray;
+}
+
+.profile-img{
+    height: 100%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.navigation.active header .profile{
+    height: 40px;
+}
+
+.navigation header span{
+    font-size: 15px;
+}
+
+.navigation .divider{
+    position: relative;
+    margin: 0 auto;
+    height: 1px;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.377);
+
+}
+
+.navigation .bg-waves {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    opacity: 0.3;
+  }

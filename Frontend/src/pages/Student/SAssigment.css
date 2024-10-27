@@ -1,0 +1,128 @@
+
+.assignmet {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 24%);
+    grid-gap: 10px;
+    padding: 10px;
+  }
+  
+  .assignmet .row {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(40deg, var(--clr-i), var(--clr-ii));
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.2s ease;
+    overflow: hidden;
+  }
+  
+  .assignmet .row:hover {
+    scale: 0.99;
+  }
+  
+  .assignmet .row .bg-waves,
+  .assignmet .row .bg-waves__ {
+    position: absolute;
+    left: 0;
+    opacity: 0.3;
+  }
+  .assignmet.row .bg-waves {
+    top: 0;
+  }
+  .assignmet .row .bg-waves__ {
+    bottom: 0;
+  }
+  
+  .assignmet .row.header {
+    height: 700px;
+    width: 75%;
+    background-color: rgb(107, 107, 107);
+  }
+
+  .assignmet .row.header2{
+    height: 150px;
+    width: 75%;
+    font-display:flex ;
+    background-color: rgba(245, 245, 245, 0.993);
+  }
+  .assignmet .row.header3{
+    height: 350px;
+    width: 50%;
+    font-display:flex ;
+    background-color: rgb(252, 252, 252);
+  }
+
+
+  .assignmet .row.header .row.header2 .ok,
+  .assignmet .row.header .row.header2 .ok1,
+  .assignmet .row.header .row.header3 .ok,
+  .assignmet .row.header .row.header3 .ok3{
+    display: inline;
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    text-align: left;
+
+    
+
+  }
+
+  .assignmet .row.header .row.header2 .ok1{
+    font-size: 15px;
+    text-align: left;
+    
+  }
+  
+  .assignmet .row.header .row.header3 .icon{
+    width: 250px;
+    height: 200px;
+
+  }
+  .assignmet .row.header .row.header3 .cancell{
+    background-color: black;
+    color: aliceblue;
+    width: 75px;
+    height: 25px;
+    border-radius: 50px;
+    
+    
+    
+  }
+  .assignmet .row.header .row.header3 .done{
+    background-color: rgb(18, 255, 10);
+    color: aliceblue;
+    width: 75px;
+    height: 25px;
+    margin-left: 15px;
+    border-radius: 50px;
+    
+  }
+
+
+
+  .assignmet .row.header:nth-child(1) {
+    grid-column: span 3;
+    
+    
+  }
+  .assignmet .row.header .txt-head {
+    position: relative;
+    font-size: 40px;
+    font-family: raleway;
+    font-weight: 400;
+  }
+  .assignmet .row.header .txt-head2{
+    font-size: 20px;
+  }
+
+  .assignmet .row .divider {
+    height: 1px;
+    width: 35%;
+    background-color: rgba(255, 255, 255, 0.514);
+    margin: 10px 0;
+  }

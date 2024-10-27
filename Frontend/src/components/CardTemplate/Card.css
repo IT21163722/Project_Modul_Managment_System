@@ -1,0 +1,32 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  gap: 5px;
+  border-right: 1px solid rgba(255, 255, 255, 0.486);
+}
+
+.card:nth-child(4) {
+  border-right: none;
+}
+
+.card .icon {
+  position: relative;
+  font-size: 18px;
+  color: white;
+}
+
+.card .title {
+  font-size: 16px;
+  color: white;
+  font-weight: 400;
+}
+
+.card .value {
+  color: lime;
+  display: flex;
+  gap: 5px;
+}
