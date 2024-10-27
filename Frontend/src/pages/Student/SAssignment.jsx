@@ -22,7 +22,7 @@ const SAssignment = () => {
       </div>
       <br></br>
       <div className="row header3">
-        <h1 className="ok3">Upload Your Assignments</h1>
+        <h1 className="ok3">Upload Your Assignment</h1>
         <button>
         <FcAddImage className='icon' />
         </button>
