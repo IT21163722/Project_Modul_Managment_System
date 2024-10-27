@@ -28,7 +28,7 @@ const SAssignment = () => {
         </button>
         <br></br>
         <div>
-        <button className="cancell" type="button">Cancel</button>
+        <button className="cancell" type="button">Cancell</button>
         <button className="done" type="button">Done</button>
         </div>
       </div>
